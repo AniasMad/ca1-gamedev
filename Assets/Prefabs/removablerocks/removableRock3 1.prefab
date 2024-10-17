@@ -1,66 +1,12 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &180630606722646984
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3478674540287989298}
-  - component: {fileID: 2955339506180471833}
-  m_Layer: 0
-  m_Name: removableRock3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3478674540287989298
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180630606722646984}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7829411151312639852}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2955339506180471833
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180630606722646984}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3.95, y: 3.65, z: 4.46}
-  m_Center: {x: -0.22, y: 1.3, z: 0.33}
---- !u!1001 &7722862508507508871
+--- !u!1001 &8270287462504445990
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3478674540287989298}
+    m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -104,15 +50,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
       propertyPath: m_Name
-      value: removableRock3
+      value: removableRock3 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
+      propertyPath: m_TagString
+      value: RemovableRock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6501781311701072974}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6979768591562193807}
   m_SourcePrefab: {fileID: 100100000, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
---- !u!4 &7829411151312639852 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
-  m_PrefabInstance: {fileID: 7722862508507508871}
+--- !u!1 &9080558056315323767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 1d2b4cc5f71fd78448bdbe57729758fc, type: 3}
+  m_PrefabInstance: {fileID: 8270287462504445990}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &6501781311701072974
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9080558056315323767}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.039172895, y: 0.042972945, z: 0.052155994}
+  m_Center: {x: -0.0018046629, y: -0.004066277, z: 0.015560029}
+--- !u!114 &6979768591562193807
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9080558056315323767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4767c8a1545df6c498e86a415e076e2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getDestroyed: 0
+  dissolveDuration: 1
+  dissolveStrength: 0
