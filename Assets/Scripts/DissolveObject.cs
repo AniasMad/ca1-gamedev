@@ -20,7 +20,7 @@ public class DissolveObject : MonoBehaviour
 
     public IEnumerator dissolver()
     {
-        particles.Stop();
+        Destroy(particles);
         float elapsedTime = 0;
         Material dissolveMaterial = GetComponent<Renderer>().material;
 

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
 
-    public float speed = 2.0f;
+    public float speed = 5.0f;
 
     private float moveX;
     private float moveZ;
@@ -19,6 +19,14 @@ public class PlayerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10.0f;
+        }
+        else
+        {
+            speed = 5.0f;
+        }
         moveZ = Input.GetAxis("Vertical") * speed * Time.deltaTime;
         moveX = Input.GetAxis("Horizontal") * speed * Time.deltaTime;
 

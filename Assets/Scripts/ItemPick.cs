@@ -6,7 +6,7 @@ using TMPro;
 
 public class ItemPick : MonoBehaviour
 {
-    public float maxDistance = 7;
+    public float maxDistance = 15;
     public LayerMask layersToHit;
     public TextMeshProUGUI textElement;
 
@@ -24,7 +24,7 @@ public class ItemPick : MonoBehaviour
                 if(Input.GetKeyDown("e"))
                 {
                     this.GetComponent<OrbCount>().orbCount += 1;
-                    hitInfo.collider.gameObject.GetComponent<DissolveObject>().getDestroyed = true;
+                    hitInfo.collider.gameObject.GetComponent<DissolveOrb>().getDestroyed = true;
                 }
                 
             }
@@ -35,6 +35,15 @@ public class ItemPick : MonoBehaviour
                 {
                     this.GetComponent<OrbCount>().orbCount -= 1;
                     hitInfo.collider.gameObject.GetComponent<DissolveRock>().getDestroyed = true;
+                }
+            }
+            if ((hitInfo.collider.gameObject.tag == "TPPlatform" && hitInfo.distance < 15) && this.GetComponent<OrbCount>().orbCount >= 1)
+            {
+                textElement.text = "Press E to Teleport";
+                if(Input.GetKeyDown("e"))
+                {
+                    this.GetComponent<OrbCount>().orbCount -= 1;
+                    hitInfo.collider.gameObject.GetComponent<Teleportation>().tp = true;
                 }
             }
         }

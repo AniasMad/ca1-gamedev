@@ -42,8 +42,9 @@ Material:
     - _BUILTIN_QueueOffset: 0
     - _DissolveAmount: 0
     - _Metallic: 0.28
-    - _NoiseAmount: 30
+    - _NoiseAmount: 60
     - _Smoothness: 0.31
     m_Colors:
     - _BaseColor: {r: 0.6528301, g: 0.30424345, b: 0.44323683, a: 0}
+    - _EdgeColour: {r: 0.9221515, g: 0, b: 0.019446885, a: 0}
   m_BuildTextureStacks: []
