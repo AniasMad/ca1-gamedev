@@ -4938,7 +4938,7 @@ GameObject:
   - component: {fileID: 3923585829705889843}
   - component: {fileID: 7912827979845865825}
   m_Layer: 6
-  m_Name: ShadowBall
+  m_Name: ShadowOrb
   m_TagString: ShadowBall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5092,7 +5092,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0161069af0c84a14e9c8369d43d4c2fe, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 020787ec7d33a9b42a3809545536759b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.572
   m_Pitch: 1

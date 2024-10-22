@@ -10,6 +10,9 @@ public class DissolveRock : MonoBehaviour
     public float dissolveDuration = 2;
     public float dissolveStrength;
 
+    public AudioSource audioDestroy;
+    private bool audioPlayed = false;
+
 
     public void StartDissolver()
     {
@@ -18,6 +21,11 @@ public class DissolveRock : MonoBehaviour
 
     public IEnumerator dissolver()
     {
+        if (!audioPlayed)
+        {
+            audioDestroy.Play();
+            audioPlayed = true;
+        }
         float elapsedTime = 0;
         Material dissolveMaterial = GetComponent<Renderer>().material;
 
