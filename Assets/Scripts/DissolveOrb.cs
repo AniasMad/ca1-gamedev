@@ -17,6 +17,7 @@ public class DissolveOrb : MonoBehaviour
     public void StartDissolver()
     {
         StartCoroutine(dissolver());
+        Destroy(GetComponent<Collider>());
     }
 
     public IEnumerator dissolver()

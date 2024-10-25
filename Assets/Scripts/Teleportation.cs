@@ -12,7 +12,8 @@ public class Teleportation : MonoBehaviour
     {
         if (tp)
         {
-            player.transform.position = new Vector3(tpPoint.transform.position.x, tpPoint.transform.position.y, tpPoint.transform.position.z);
+            player.transform.position = 
+            new Vector3(tpPoint.transform.position.x, tpPoint.transform.position.y, tpPoint.transform.position.z);
             tp = false;
         }
     }
